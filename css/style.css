@@ -9,13 +9,25 @@
 body{
     height: 100vh;
     background-color: var(--primary-color);
+
+    flex-direction: column;
+    display: flex;
+    padding: 70px; /**adiciona um espaço entre o conteúdo e o começo da tela */
+    font-family: Righteous, sans-serif;
 }
 
 header{
-    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    gap: 16px; /**coloca um espaçamento entre o span e a foto da pokebola */
 }
 
 main{
-    background-color: lightblue;
+  
     flex-grow: 2;
+}
+
+header span{
+    font-size: 32px;
+    color: var(--secundary-color);
 }
