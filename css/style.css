@@ -34,7 +34,7 @@ header span{
 }
 h1{
     flex-grow: 1;
-    font-size: 300px;
+    font-size: 20vh;
     color: white;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@ h1{
 
 .sombra{
     position: absolute;
-    font-size: 400px;
+    font-size: 28vw;
     color: #ffffff55;
     z-index: -999;
     top: 50%;
@@ -88,4 +88,47 @@ h1{
 footer{
     text-align: center;
     color: var(--secundary-color);
+}
+
+/* TABLET */
+@media (max-width: 1024px){
+    
+    .sombra{
+        transform: translate(-50%,-180%);
+        }
+
+    h1{
+            transform: translate(0 , -30%);
+    }
+    body{
+        padding: 30px;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        gap: 8px;
+
+    }
+
+    .descricao p{
+        text-align: center;
+    }
+    .pikachu{
+        transform: translate(-46%,-50%);
+    }
+
+    footer{
+        display: none;
+    }
+   
+}
+
+/* MOBILE */
+@media (max-width: 480px){
+    body{
+    }
 }
