@@ -34,7 +34,7 @@ header span{
 }
 h1{
     flex-grow: 1;
-    font-size: 20vh;
+    font-size: 25vw;
     color: white;
     display: flex;
     justify-content: center;
@@ -69,6 +69,10 @@ h1{
 
 }
 
+.descricao{
+    z-index: 1;
+}
+
 .sombra{
     position: absolute;
     font-size: 28vw;
@@ -98,7 +102,7 @@ footer{
         }
 
     h1{
-            transform: translate(0 , -30%);
+        transform: translate(0 , -30%);
     }
     body{
         padding: 30px;
@@ -129,6 +133,29 @@ footer{
 
 /* MOBILE */
 @media (max-width: 480px){
-    body{
+    .descricao p{
+        display: none;
+    }
+
+    .pikachu{
+        height: 50vh;
+    }
+    
+    .sombra{
+     transform: translate(-50%,-220%);
+
+    }
+
+    h1{
+     transform: translate(0,-22%);
+
+    }
+
+    .descricao h2{
+        font-size: 38px;
+    }
+
+    .container a{
+        width: 100%;
     }
 }
